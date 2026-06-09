@@ -14,4 +14,15 @@ public abstract class Vehiculo
     public string marca { get => Marca; set => Marca = value; }
     public string modelo { get => Modelo; set => Modelo = value; }
     public int año { get => Año; set => Año = value; }
+
+
+
+
+    public abstract void Acelerar();
+    public abstract void Frenar();
+
+    public void MostrarEstado()
+        {
+            Console.WriteLine($"Vehículo: {Marca} {Modelo} ({Año})");
+        }
 }
