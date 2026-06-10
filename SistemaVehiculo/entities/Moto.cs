@@ -4,12 +4,12 @@ public class Moto : Vehiculo
     {
     }
 
-    public override void Acelerar()
+    public override void Acelerar(double cantidad)
     {
         Console.WriteLine("La moto está acelerando.");
     }
 
-    public override void Frenar()
+    public override void Frenar(double cantidad)
     {
         Console.WriteLine("La moto está frenando.");
     }

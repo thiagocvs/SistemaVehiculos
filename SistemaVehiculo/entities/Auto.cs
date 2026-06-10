@@ -1,17 +1,18 @@
 public class Auto : Vehiculo
 {
-    public Auto(string marca, string modelo, int año)
-        : base(marca, modelo, año)
+    public Auto(string marca, string modelo, int año) : base(marca, modelo, año)
     { 
     }
 
-    public override void Acelerar()
+    public override void Acelerar(double cantidad)
     {
-        Console.WriteLine("El auto está acelerando.");
+        velocidadActual += cantidad;
+        Console.WriteLine("El auto está acelerando......");
     }
 
-    public override void Frenar()
+    public override void Frenar(double cantidad)
     {
-        Console.WriteLine("El auto está frenando.");
+        velocidadActual = velocidadActual - cantidad;
+        Console.WriteLine("El auto está frenando......");
     }
 }
